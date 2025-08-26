@@ -1,0 +1,23 @@
+{
+  "apiVersion": 3,
+  "name": "custom/latest-posts-grid",
+  "title": "Latest Posts Grid",
+  "category": "widgets",
+  "icon": "grid-view",
+  "description": "Displays latest posts from WPGraphQL in a responsive Tailwind grid.",
+  "keywords": ["posts", "grid", "graphql", "latest"],
+  "version": "1.1.0",
+  "attributes": {
+    "postCount": {
+      "type": "number",
+      "default": 4,
+      "minimum": 4,
+      "maximum": 12
+    }
+  },
+  "supports": { "html": false },
+  "editorScript": "file:./build/index.ts.js",
+  "editorStyle": "file:./build/editor.css",
+  "style": "file:./build/style-index.css",
+  "viewScript": "file:./build/view.tsx.js"
+}

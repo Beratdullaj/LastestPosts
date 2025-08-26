@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal extra utility so we don't need the Tailwind line‑clamp plugin */
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+/* Make Latest Posts Grid full width */
+.wp-block-custom-latest-posts-grid {
+  max-width: 100% !important;   /* override theme content size */
+  width: 100vw;                 /* use full viewport width */
+  margin-left: calc(50% - 50vw); /* break out of constrained wrapper */
+  margin-right: calc(50% - 50vw);
+}
+
+}
