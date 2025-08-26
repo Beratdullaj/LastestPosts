@@ -15,27 +15,15 @@ It fetches latest posts via **WPGraphQL** and displays them in a responsive grid
 
 ## Installation
 
-1. **Install WPGraphQL**
-   - Download the latest `.zip` from the WPGraphQL releases page.
-   - In WordPress Admin:  
-     **Plugins → Add New → Upload Plugin** → select the zip → **Activate**.
-   - Confirm GraphQL works at:  
-     `http://your-site.test/graphql`
-
-2. **Add this block plugin**
-   - Copy the folder `latest-posts-grid` into:
-     ```
-     wp-content/plugins/latest-posts-grid
-     ```
-
-3. **Build assets**
+1. **Build assets**
    ```bash
    cd wp-content/plugins/latest-posts-grid
    npm install
    npm run build
 
-4. **Activate the block**
+2. **Activate the block**
     In WordPress Admin → Plugins → activate Latest Posts Grid
+    In WordPress Admin → Plugins → activate WPGraphQL
 
 **Testing**
 
